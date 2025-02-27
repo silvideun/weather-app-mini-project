@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <!-- Подключаем CSS -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+<body>
+  <div class="weather-card">
+
+    <!-- Поиск города -->
+    <div class="search">
+        <input type="text" id="cityInput" placeholder="Введите город" autocomplete="off">
+        <button id="searchButton"><img src="img/search.png"></button>
+      </div>
+
+    <!-- Текущая погода -->
+    <div class="current-weather">
+      <div class="weather">
+        <img src="" class="weather-icon">
+        <h1 class="temp" id="temp"></h1>
+        <h2 class="city" id="city"></h2>
+      </div>
+    </div>
+
+    <!-- Дополнительные данные -->
+    <div class="details">
+
+      <div class="detail-item">
+        <img class="humidity-icon" src="img/humidity.svg" alt=" humidity">
+         <div>
+            <p class="humidity" id="humidity"></p>
+            <p>Влажность</p>
+         </div>
+        </div>
+
+         <div class="detail-item">
+            <img class="wind-icon" src="img/wind-icon.png" alt=" wind">
+             <div>
+                <p class="wind" id="wind"></p>
+                <p>Скорость ветра</p>
+             </div>
+      </div>
+    </div>
+
+    <!-- Подключаем JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+  <!-- Подключаем JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
